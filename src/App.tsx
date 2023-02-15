@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import './App.css';
 import { MetsMap } from './MetsMap';
+import abs from './images/abs.jpg';
+import running from './images/running.jpg';
 
 const App = () => {
   const [mets, setMets] = useState<number>(MetsMap.crunch);
@@ -48,33 +50,43 @@ const App = () => {
   }
 
   return (
-    <div>
-      <div className="App">
+    <div className="App">
+      <header className="header">
+        <h2 className="title">筋トレカロリー計算アプリ</h2>
+      </header>
+      
+      <main className="main">
         <div className="menu">
-        <span>筋トレの種目</span>
-        <select value={mets} title="メニュー" onChange={onMetsChange}>
-          <option value={MetsMap.crunch}>クランチ（腹筋）</option>
-          <option value={MetsMap.pushUp}>腕立て伏せ</option>
-          <option value={MetsMap.benchPress}>ベンチプレス</option>
-          <option value={MetsMap.squat}>スクワット</option>
-          <option value={MetsMap.armCurl}>アームカール</option>
-          <option value={MetsMap.jogging}>ジョギング</option>
-          <option value={MetsMap.crawl}>水泳（クロール）</option>
-        </select>
+          <p className="item">筋トレの種目</p>
+          <select className="menu-pull-down" value={mets} title="メニュー" onChange={onMetsChange}>
+            <option value={MetsMap.crunch}>クランチ（腹筋）</option>
+            <option value={MetsMap.pushUp}>腕立て伏せ</option>
+            <option value={MetsMap.benchPress}>ベンチプレス</option>
+            <option value={MetsMap.squat}>スクワット</option>
+            <option value={MetsMap.armCurl}>アームカール</option>
+            <option value={MetsMap.jogging}>ジョギング</option>
+            <option value={MetsMap.crawl}>水泳（クロール）</option>
+          </select>
         </div>
         <div className="time">
-          <span>時間</span>
-          <input type="number" value={time} step="1" pattern=" [0-9] {1,3}" title="時間" onChange ={onTimeChange} />分
+          <span className="item">時間</span>
+          <input className="number-input" type="number" value={time} name="time" step="1" pattern=" [0-9] {1,3}" title="時間" onChange ={onTimeChange} />
+          <span className="unit">分</span>
         </div>
         <div className="weight">
-          <span>体重</span>
-          <input type="number" value={weight} name="weight" step="1" pattern=" [0-9] {1,3}" title="体重" onChange={onWeightChange} />kg
+          <span className="item">体重</span>
+          <input className="number-input" type="number" value={weight} name="weight" step="1" pattern=" [0-9] {1,3}" title="体重" onChange={onWeightChange} />
+          <span className="unit">kg</span>
         </div>
         <div className="calorie">
-          <span>消費カロリーは</span>
-          {calorie}kcal
+          <span className="item">消費カロリーは</span>
+          <p className="number-output">{calorie}</p>
+          <span className="unit">kcal</span>
         </div>
-      </div>
+        <img className="left-image" src={abs} alt='' />
+        <img className="right-image" src={running} alt='' />
+      </main>
+      
     </div>
   );
 }

@@ -4,20 +4,102 @@
   display: flex;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 40px;
+}
+
+.title {
+  text-align: center;
+}
+
+.main {
+  position: relative;
+  top: 100px;
+  left: 20px;
+  width: 900px;
+}
+
 .menu {
-  margin-right: 30px;
+  position: relative;
+  display: flex;
+  left: 310px;
+  margin: 30px;
+}
+
+.item {
+  font-size: 30px;
+  width: 400px;
+}
+
+.unit {
+  position: absolute;
+  left: 690px;
+  top: 12px
+}
+
+.menu-pull-down{
+  position: absolute;
+  left: 580px;
+  top: 40px;
+  height: 30px;
 }
 
 .time {
-  margin-right: 30px;
+  position: relative;
+  display: flex;
+  left: 310px;
+  top: -10px;
+  margin: 30px;
+}
+
+.number-input{
+  position: absolute;
+  left: 580px;
+  top: 5px;
+  width: 100px;
+  height: 30px;
 }
 
 .weight {
-  margin-right: 30px;
+  position: relative;
+  display: flex;
+  left: 310px;
+  margin: 30px;
 }
 
 .calorie {
-  background: #fffacd;
+  position: relative;
+  display: flex;
+  width: 725px;
+  height: 45px;
+  left: 310px;
+  top: 10px;
+  margin: 30px;
+  background: hwb(54 80% 0%);
+}
+
+.number-output{
+  position: relative;
+  left: 230px;
+  top: -15px;
+  font-size: 23px;
+}
+
+.left-image {
+  position: relative;
+  left: 350px;
+  width: 250px;
+  height: 250px;
+}
+
+.right-image {
+  position: relative;
+  left: 550px;
+  width: 220px;
+  height: 250px;
 }
 
 .App-logo {
