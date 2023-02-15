@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/Workspace-of-WASSY/static/css/main.8bcffa52.css",
-    "main.js": "/Workspace-of-WASSY/static/js/main.4ca4b5d2.js",
-    "static/js/787.13a5c983.chunk.js": "/Workspace-of-WASSY/static/js/787.13a5c983.chunk.js",
-    "static/media/abs.jpg": "/Workspace-of-WASSY/static/media/abs.6cb699e2cd8517f8d19b.jpg",
-    "index.html": "/Workspace-of-WASSY/index.html",
-    "main.8bcffa52.css.map": "/Workspace-of-WASSY/static/css/main.8bcffa52.css.map",
-    "main.4ca4b5d2.js.map": "/Workspace-of-WASSY/static/js/main.4ca4b5d2.js.map",
-    "787.13a5c983.chunk.js.map": "/Workspace-of-WASSY/static/js/787.13a5c983.chunk.js.map"
+    "main.css": "/calorie-calculator/static/css/main.8bcffa52.css",
+    "main.js": "/calorie-calculator/static/js/main.9c9eb2c6.js",
+    "static/js/787.13a5c983.chunk.js": "/calorie-calculator/static/js/787.13a5c983.chunk.js",
+    "static/media/abs.jpg": "/calorie-calculator/static/media/abs.6cb699e2cd8517f8d19b.jpg",
+    "index.html": "/calorie-calculator/index.html",
+    "main.8bcffa52.css.map": "/calorie-calculator/static/css/main.8bcffa52.css.map",
+    "main.9c9eb2c6.js.map": "/calorie-calculator/static/js/main.9c9eb2c6.js.map",
+    "787.13a5c983.chunk.js.map": "/calorie-calculator/static/js/787.13a5c983.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8bcffa52.css",
-    "static/js/main.4ca4b5d2.js"
+    "static/js/main.9c9eb2c6.js"
   ]
 }
